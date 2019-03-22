@@ -10,5 +10,6 @@ The following doesn't work
 https://jupyter-notebook.readthedocs.io/en/stable/public_server.html
 
 ## How to Run Scala and Spark in the Jupyter notebook
+https://github.com/Valassis-Digital-Media/spylon-kernel
 https://medium.com/@bogdan.cojocar/how-to-run-scala-and-spark-in-the-jupyter-notebook-328a80090b3b
 

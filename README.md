@@ -19,7 +19,7 @@ https://medium.com/@bogdan.cojocar/how-to-run-scala-and-spark-in-the-jupyter-not
 https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html
 
 Configuration file
-
+etc/hadoop/core-site.xml:
 ```xml
 <configuration>
     <property>
@@ -28,3 +28,35 @@ Configuration file
     </property>
 </configuration>
 ```
+etc/hadoop/hdfs-site.xml:
+
+Setup passphraseless ssh
+
+Now check that you can ssh to the localhost without a passphrase:
+```
+  $ ssh localhost
+```
+If you cannot ssh to localhost without a passphrase, execute the following commands:
+```
+  $ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+  $ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+  $ chmod 0600 ~/.ssh/authorized_keys
+```
+
+he following instructions are to run a MapReduce job locally. If you want to execute a job on YARN, see YARN on Single Node.
+
+Format the filesystem:
+```
+  $ bin/hdfs namenode -format
+```
+
+Start NameNode daemon and DataNode daemon:
+```
+    $ sbin/start-dfs.sh
+```
+
+The hadoop daemon log output is written to the $HADOOP_LOG_DIR directory (defaults to $HADOOP_HOME/logs).
+
+Browse the web interface for the NameNode; by default it is available at:
+
+NameNode - http://localhost:50070/

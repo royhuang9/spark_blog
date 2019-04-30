@@ -61,3 +61,6 @@ The hadoop daemon log output is written to the $HADOOP_LOG_DIR directory (defaul
 Browse the web interface for the NameNode; by default it is available at:
 
 NameNode - http://localhost:50070/
+
+## jupyter environment is overwritten after install python3 kernel in jupyter
+run "jupyter kernelspec list" to check where it is

@@ -13,3 +13,18 @@ https://jupyter-notebook.readthedocs.io/en/stable/public_server.html
 https://github.com/Valassis-Digital-Media/spylon-kernel
 https://medium.com/@bogdan.cojocar/how-to-run-scala-and-spark-in-the-jupyter-notebook-328a80090b3b
 
+
+# Install single node hadoop and spark
+## Install hadoop on single node
+https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html
+
+Configuration file
+
+```xml
+<configuration>
+    <property>
+        <name>dfs.replication</name>
+        <value>1</value>
+    </property>
+</configuration>
+```

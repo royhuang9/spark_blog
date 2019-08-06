@@ -11,6 +11,9 @@ The following doesn't work
 
 https://jupyter-notebook.readthedocs.io/en/stable/public_server.html
 
+Try this one
+https://towardsdatascience.com/running-jupyter-notebook-in-google-cloud-platform-in-15-min-61e16da34d52
+
 ## How to Run Scala and Spark in the Jupyter notebook
 https://github.com/Valassis-Digital-Media/spylon-kernel
 

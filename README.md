@@ -2,31 +2,6 @@
 ## How to Install Anaconda on CentOS
 https://blog.vpscheap.net/how-to-setup-python-anaconda-in-centos/
 
-## How to Access Jupyter notebook remotely. For example on Google Cloud or AWS
-### Generate a password for jupyter notebook
-```
-$ jupyter notebook password
-```
-Enter your password
-
-### Generate jupyter notebook configuration file
-If you don’t already have config file for the notebook, create one using the following command:
-```
-$ jupyter notebook --generate-config
-```
-### Endit configuration file
-```
-# Set ip to '*' to bind on all interfaces (ips) for the public server
-c.NotebookApp.ip = '*'
-c.NotebookApp.open_browser = False
-
-# It is a good idea to set a known, fixed port for server access
-c.NotebookApp.port = 9999
-```
-
-### Change the firewall to allow access tcp port 9999
-Google it.
-
 ## How to Run Scala and Spark in the Jupyter notebook
 https://github.com/Valassis-Digital-Media/spylon-kernel
 
